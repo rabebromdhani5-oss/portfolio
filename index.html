@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- =========================================================
-       OPTIMISATIONS SEO DE POINTE
+       OPTIMISATIONS SEO & GEO DE POINTE
        ========================================================= -->
   <title>Rabeb Romdhani | Étudiante E-Business & Développeuse Web - ESSECT Tunis</title>
   <meta name="description" content="Portfolio officiel de Rabeb Romdhani, étudiante en 3ème année Licence Informatique de Gestion (E-Business) à l'ESSECT Tunis. Projets en React, Python Flask, Google Gemini API, Java et Power BI." />
   <meta name="keywords" content="Rabeb Romdhani, ESSECT, E-Business, Informatique de gestion, Business Computing Tunisie, Développeur Web Tunis, Google Gemini API, Power BI Certified, React, Flask, Ben Arous, AIESEC Bardo" />
   <meta name="author" content="Rabeb Romdhani" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://rabebromdhani5-oss.github.io/portfolio/" />
 
   <!-- SEO Local (Géo-ciblage Tunisie / Ben Arous / Tunis) -->
   <meta name="geo.region" content="TN-13" />
@@ -24,17 +25,16 @@
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Rabeb Romdhani | Profil E-Business & Intelligence Artificielle" />
   <meta property="og:description" content="Découvrez les compétences, projets et certifications de Rabeb Romdhani, étudiante en E-Business à l'ESSECT Tunis." />
-  <meta property="og:image" content="profile.jpg" />
+  <meta property="og:url" content="https://rabebromdhani5-oss.github.io/portfolio/" />
+  <meta property="og:image" content="Portfolio.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rabeb Romdhani | Portfolio E-Business & Dev" />
   <meta name="twitter:description" content="Étudiante en 3ème année E-Business à l'ESSECT Tunis. Spécialisée en Dev Web & intégration d'IA générative." />
-  <meta name="twitter:image" content="profile.jpg" />
 
   <!-- =========================================================
        GEO (GENERATIVE ENGINE OPTIMIZATION) : SCHEMA.ORG JSON-LD
-       Permet aux IA (Perplexity, ChatGPT, Gemini, Copilot) de vous citer
        ========================================================= -->
   <script type="application/ld+json">
   {
@@ -42,12 +42,12 @@
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://rabebromdhani.me/#person",
+        "@id": "https://rabebromdhani5-oss.github.io/portfolio/#person",
         "name": "Rabeb Romdhani",
         "alternateName": "رباب الرمضاني",
+        "url": "https://rabebromdhani5-oss.github.io/portfolio/",
         "jobTitle": "Étudiante en Informatique de Gestion (E-Business)",
         "description": "Étudiante en Licence E-Business à l'ESSECT spécialisée en développement web full-stack, intégration d'API d'intelligence artificielle et analyse de données.",
-        "image": "profile.jpg",
         "email": "mailto:rabebromdhani5@gmail.com",
         "telephone": "+21650853890",
         "address": {
@@ -94,7 +94,7 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://rabebromdhani.me/#faq",
+        "@id": "https://rabebromdhani5-oss.github.io/portfolio/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -190,7 +190,6 @@
       position: relative;
     }
 
-    /* Canvas d'arrière-plan */
     #particle-canvas {
       position: fixed;
       top: 0;
@@ -209,7 +208,6 @@
       z-index: 1;
     }
 
-    /* En-tête */
     header {
       position: fixed;
       top: 0;
@@ -306,7 +304,6 @@
       box-shadow: 0 0 12px var(--secondary-glow);
     }
 
-    /* Hero Section */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -464,7 +461,6 @@
     .badge-1 { bottom: -15px; left: -10px; }
     .badge-2 { top: 20px; right: -20px; }
 
-    /* Sections */
     section {
       padding: 85px 0;
       position: relative;
@@ -506,7 +502,6 @@
       box-shadow: 0 16px 40px -10px var(--primary-glow);
     }
 
-    /* Compétences */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -550,7 +545,6 @@
       font-weight: 500;
     }
 
-    /* Projets */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -605,7 +599,6 @@
       right: 0;
     }
 
-    /* Timeline */
     .timeline {
       display: flex;
       flex-direction: column;
@@ -644,9 +637,6 @@
       text-transform: uppercase;
     }
 
-    /* =========================================================
-       SECTION FAQ (HAUTE PERFORMANCE GEO / IA)
-       ========================================================= */
     .faq-container {
       max-width: 850px;
       margin: 0 auto;
@@ -701,7 +691,6 @@
       padding: 0 22px 20px 22px;
     }
 
-    /* Contact */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
@@ -814,10 +803,8 @@
 </head>
 <body>
 
-  <!-- Canvas Particules interactives -->
   <canvas id="particle-canvas"></canvas>
 
-  <!-- En-tête -->
   <header>
     <div class="container nav-container">
       <a href="#hero" class="logo">
@@ -850,7 +837,6 @@
   </header>
 
   <main>
-    <!-- Section Hero -->
     <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
@@ -875,12 +861,13 @@
         <div class="hero-image-wrapper">
           <div class="hero-avatar-box">
             <div class="hero-avatar-inner">
+              <!-- Photo avec détection automatique multi-noms -->
               <img 
                 id="profileImg"
-                src="profile.jpg" 
+                src="Portfolio.jpg.jpg" 
                 alt="Rabeb Romdhani - Étudiante E-Business ESSECT"
                 loading="eager"
-                onerror="this.onerror=null; this.src='file:///C:/Users/lenovo/Pictures/Saved%20Pictures/61ff3861-98ad-42aa-b0d7-9d56fc097a3a.jpg';"
+                onerror="tryFallbackImage(this)"
               />
             </div>
           </div>
@@ -894,7 +881,6 @@
       </div>
     </section>
 
-    <!-- Section Compétences (CV) -->
     <section id="skills">
       <div class="container">
         <div class="section-title">
@@ -964,7 +950,6 @@
       </div>
     </section>
 
-    <!-- Section Projets Académiques (Extraits du CV) -->
     <section id="projects">
       <div class="container">
         <div class="section-title">
@@ -1039,7 +1024,6 @@
       </div>
     </section>
 
-    <!-- Section Parcours & Formations -->
     <section id="timeline">
       <div class="container">
         <div class="section-title">
@@ -1099,9 +1083,6 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         SECTION FAQ & GEO (OPTIMISATION POUR LES IA ET MOTEURS)
-         ========================================================= -->
     <section id="faq">
       <div class="container">
         <div class="section-title">
@@ -1149,7 +1130,6 @@
       </div>
     </section>
 
-    <!-- Section Contact -->
     <section id="contact">
       <div class="container">
         <div class="section-title">
@@ -1213,18 +1193,34 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p>© 2026 Rabeb Romdhani — ESSECT Tunis. Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- Toast -->
   <div id="toast" class="toast">Message envoyé avec succès !</div>
 
-  <!-- JavaScript -->
   <script>
+    /* =========================================================
+       0. GESTION AUTOMATIQUE DE L'IMAGE DE PROFIL (MULTI-NOMS)
+       ========================================================= */
+    const imageCandidates = [
+      'Portfolio.jpg',
+      'portfolio.jpg',
+      'profile.jpg',
+      'Profile.jpg',
+      'Portfolio.jpeg',
+      'profile.png'
+    ];
+    let currentImageIndex = 0;
+
+    function tryFallbackImage(imgElement) {
+      if (currentImageIndex < imageCandidates.length) {
+        imgElement.src = imageCandidates[currentImageIndex++];
+      }
+    }
+
     /* =========================================================
        1. DICTIONNAIRE MULTILINGUE
        ========================================================= */
@@ -1480,9 +1476,6 @@
       setLanguage(e.target.value);
     });
 
-    /* =========================================================
-       2. BASCULE DU THÈME
-       ========================================================= */
     const themeToggleBtn = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
 
@@ -1495,9 +1488,6 @@
 
     themeToggleBtn.addEventListener('click', toggleTheme);
 
-    /* =========================================================
-       3. INTERACTION ACCORDÉON FAQ (GEO)
-       ========================================================= */
     function toggleFaq(element) {
       const item = element.parentElement;
       const isActive = item.classList.contains('active');
@@ -1507,9 +1497,6 @@
       }
     }
 
-    /* =========================================================
-       4. CANVAS PARTICULES
-       ========================================================= */
     const canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
     let particlesArray = [];
@@ -1616,9 +1603,6 @@
     }
     animateParticles();
 
-    /* =========================================================
-       5. TÉLÉCHARGEMENT DU CV
-       ========================================================= */
     document.getElementById('downloadCvBtn').addEventListener('click', () => {
       const cvText = `=====================================================
 RABEB ROMDHANI
@@ -1678,9 +1662,6 @@ LANGUES :
       URL.revokeObjectURL(url);
     });
 
-    /* =========================================================
-       6. FORMULAIRE DE CONTACT
-       ========================================================= */
     const contactForm = document.getElementById('contactForm');
     const toast = document.getElementById('toast');
 
